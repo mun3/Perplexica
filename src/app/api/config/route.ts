@@ -7,6 +7,7 @@ import {
   getGroqApiKey,
   getOllamaApiEndpoint,
   getOpenaiApiKey,
+  getDeepseekApiKey,
   updateConfig,
 } from '@/lib/config';
 import {
@@ -85,6 +86,9 @@ export const POST = async (req: Request) => {
         GEMINI: {
           API_KEY: config.geminiApiKey,
         },
+        DEEPSEEK: {
+          API_KEY: config.deepseekApiKey,
+        },        
         OLLAMA: {
           API_URL: config.ollamaApiUrl,
         },
